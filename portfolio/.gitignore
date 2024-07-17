@@ -1,0 +1,24 @@
+.env
+.idea/
+.vscode/
+/__pycache/
+*.pyc
+/media/
+*.log
+*.pem
+node_modules/
+web_builds/
+package-lock.json
+webpack-stats.prod.json
+.vscode
+media/
+/static/
+medical/
+svn.log
+venv/
+django migrations - need to have migration and init
+*/migrations/*
+!**/migrations
+!**/migrations/_init_.py
+.DS_Store
+fo_frontend/src/components/config/ConstantsURL.js

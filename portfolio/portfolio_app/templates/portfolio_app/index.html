@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Portfolio</title>
+    <link rel="stylesheet" href="{% static 'my_app/css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <!-- Your HTML content -->
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#studies">Studies</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/SrikanthG25" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://gitlab.com/Srikanthg25" target="_blank"><i class="fab fa-gitlab"></i></a>
+                <a href="https://www.linkedin.com/in/srikanth-g-087ba6252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href=" https://x.com/Srikanthg25?t=JRIofFfpFC1-1iDZfeqTFA&s=08 " target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/.srzzz.?igsh=NWtsbnIyM3JlbDdh" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/Untold_Mysterys" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:srikanthsk2508@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <img src="{% static 'my_app\img\srikanth.jpg' %}" alt="Profile Picture" class="profile-picture">
+            <h1>Sri kanth</h1>
+            <p>Software Developer &amp; Backend &amp; Creative Thinker &amp; Problem Solver</p>
+            <p>Architecting Scalable Backend Systems &amp; Innovating Creative Solutions to Complex Software Engineering Challenges</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p class="justified">Hello! I'm Srikanth, a passionate backend developer with a knack for problem-solving and creating robust solutions.</p>
+        <p class="justified">I have a Bachelor's in Information Technology from Hindusthan Institute of Technology, Coimbatore-641 032,, specializing in advanced algorithms and Full Stack Developer.</p>
+        <p class="justified">Throughout my career, I have gained extensive experience in developing scalable RESTful APIs using Python and Django, ensuring high performance and security.</p>
+        <p class="justified">My journey in software development has also equipped me with expertise in database management, including MySQL, PostgreSQL, and MongoDB.</p>
+        <p class="justified">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <!-- <img src="project-1.jpg" alt="Project 1"> -->
+                <h3> Ticketing Tool</h3>
+                <p class="justified"> <b>Jira-Based Software Development</b>
+                    Developing a Jira-based software using Python Django Rest Framework involves implementing JWT
+                    authentication to ensure secure, stateless user authentication. This project will leverage Django's robust
+                    framework to create a RESTful API that integrates seamlessly with Jira for task and project management.
+                    JWT (JSON Web Tokens) will be used for authentication, providing a secure method for clients to access
+                    the API by including the token in the HTTP headers of their requests. This setup will enhance security
+                    and scalability, making it ideal for managing user sessions in a distributed environment while ensuring
+                    that the  API endpoints are protected and accessible only to authenticated users.<br>
+                    <b>Tech Stack:</b> Python, Django, MySQL, RESTful APIs, GitLab, Jira, Postman.</p>
+                <button class="btn">View Project</button>
+            </div>
+            <div class="project-card">
+                <!-- <img src="project-2.jpg" alt="Project 2"> -->
+                <h3>Student Management System </h3>
+               <p class="justified">
+                Developing a student management system using Python Django Rest Framework involves creating a
+                robust RESTful API to handle various aspects of student data and operations, with JWT authentication for
+                secure access. This system will manage student information, course enrollments, grades, attendance, and
+                other academic records. The Django framework will facilitate rapid development and
+                maintenance,stateless user authentication, ensuring that only authorized users can access or modify data .<br>
+                    <b>Tech Stack:</b> Python, Django, MySQL, RESTful APIs, GitLab, Postman.</p>
+                <button class="btn">View Project</button>
+            </div>
+            <div class="project-card">
+                <!-- <img src="project-2.jpg" alt="Project 2"> -->
+                <h3> ALSTUIN ( Alumni Student Interaction )</h3>
+               <p class="justified">
+                To connect current students and alumni of an educational institution. The app will allow students to
+                connect with alumni who can provide career advice and mentorship opportunities .<br>
+                    <b>Tech Stack:</b> XML, Java, Firebase.</p>
+                <button class="btn">View Project</button>
+            </div>
+            <div class="project-card">
+                <!-- <img src="project-2.jpg" alt="Project 2"> -->
+                <h3>MOBILE APPLICATION FOR END TO END ROADSIDE ASSISTANCE
+                    FOR AUTOMOBILE SERVICES</h3>
+               <p class="justified">
+                The startup promises to address roadside assistance within 30-40 minutes and provide 24×7 assistance with
+                local garages registered with the app.The mobile application, will have a tie-up with local mechanics and
+                vendors, created employment opportunities.<br>
+                    <b>Tech Stack:</b> XML, Java, Firebase.</p>
+                <button class="btn">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Expertise in Python, Java</p>
+                <p>Expertise Framework in Django, Flask, Rest - Framework / Rest APIs</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Experience with MySQL, SQL, and PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Expertise in HTML, CSS and JavaScripts</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Microsoft Tools</h3>
+                <p> Microsoft Teams, Outlook, OneDrive, Excel, Word, Ms-PowerPoint, etc.</p>
+            </div><div class="skill-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Designing</h3>
+                <p> Canva, Figma, Adobe Photoshop</p>
+            </div>
+        </div><div class="skill-card">
+            <i class="fas fa-wrench"></i>
+            <h3>Tools</h3>
+            <p> Visual Studio Code, Pycharm, Android Studio, Github , GitLab, Jira, DBeaver, MySQL Workbeanch, 
+                Postman API Platform</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Studies Section -->
+    <section class="studies" id="studies">
+        <h2>Studies</h2>
+        <div class="studies-grid">
+            <div class="study-card">
+                <h3>Bachelor's in Information Technology</h3>
+                <p>Hindusthan Institute of Technology, Coimbatore-641 032, 2020 - 2024</p>
+                <p>Focused on advanced algorithms, machine learning, and software engineering.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Junior Python Developer at Svastanibhanda Medical Technology pvt ltd.(emedhub)</h3>
+                <p>September 2023 - Present</p>
+                <p>eMedHub is the gateway of hospital's EHR Software, allows easy
+                    flow of inpatients as well as out-patients, patients vitals, managing
+                    departments, medical records etc.</p>
+                <ul>
+                    <li> Designed and implemented secure, scalable RESTful APIs for
+                        medical software, created comprehensive documentation, and
+                        managed API versions to ensure backward compatibility.</li>
+                    <li>Monitored and optimized API performance using New Relic,
+                        Prometheus, and custom scripts, and conducted load testing with
+                        JMeter or Locust to ensure efficiency under high traffic loads.</li>
+                    <li>> Optimized database queries and implemented indexing to improve
+                        performance</li>
+                    <li>> Optimized database queries and implemented indexing to improve
+                        performance.</li>
+                    <li> Ensured high test coverage and automated testing processes.</li>
+                    <li> <b>Tech Stack: </b>Python, Django, MySQL, GitLab, Postman, RESTful APIs, Jira,
+                        DBeaver.</li>
+                </ul>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
+        <form class="contact">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><a href="mailto:srikanthsk2508@gmail.com">Email: srikanthsk2508@gmail.com</a></p>
+            <p>Phone: +91 97863 77074</p>
+            <p>Address: Coimbatore, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Sri kanth(untold_._mystery) Your Vision, Our Code</p>
+        <div class="social-links">
+            <a href="https://github.com/SrikanthG25" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://gitlab.com/Srikanthg25" target="_blank"><i class="fab fa-gitlab"></i></a>
+            <a href="https://www.linkedin.com/in/srikanth-g-087ba6252/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href=" https://x.com/Srikanthg25?t=JRIofFfpFC1-1iDZfeqTFA&s=08 " target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/.srzzz.?igsh=NWtsbnIyM3JlbDdh" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/Untold_Mysterys" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="mailto:srikanthsk2508@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="{% static 'my_app/js/contact.js' %}"></script>
+</body>
+</html>
